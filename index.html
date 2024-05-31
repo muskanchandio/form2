@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>login form</title>
+    <style>
+        body{
+            background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,56,126,1) 0%, rgba(0,212,255,1) 100%);
+        }
+        .container{
+            margin-top: 100px;
+            
+           
+        }
+        
+        .row h3{
+            font-weight: 400;
+        }
+        .sec2{
+            background-color: rgb(61, 61, 221);
+        }
+        .sec1{
+         align-items: center;
+        }
+        .space1{
+          color: gray;
+          width: 62%;
+        }
+      #invalidCheck3{
+        border-color: white;
+        background-color: rgb(61, 61, 221);
+        border-radius: 0%;
+      }
+      .btn{
+        
+        border-radius: 25px;
+        padding: 8px 20px;
+    
+      }
+      #input1{
+        width: 67%;
+      }
+      #input2{
+        width: 80%;
+      }
+      .ro3{
+        width: 80%;
+      }
+      .space2{
+        width:63% ;
+      }
+    
+    </style>
+  </head>
+  <body>
+ <div class="container">
+  
+    <div class="row">
+        <div class="col-md-6 col-sm-12 bg-light px-5  sec1">
+            <h3 class="text-primary my-5 mx-5" >General Information</h3>
+            <select class="form-select border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent space1" aria-label="Default select example">
+                <option selected>Title</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="row ">
+                <div class="col">
+                  <input id="input2" type="text" class="form-control border-top-0 border-start-0 border-end-0  ms-5  w-75 bg-transparent  " placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col ">
+                  <input id="input1" type="text" class="form-control border-top-0 border-start-0 border-end-0  bg-transparent" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+              <select class="form-select border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent space1" aria-label="Default select example">
+                <option selected>Position</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0  my-3 mx-5 w-75 bg-transparent" id="formGroupExampleInput" placeholder="Company">
+              </div>
+              <div class="row  my-3    ro3">
+                <div class="col-8">
+                    <input type="text" class="form-control border-top-0 border-start-0 border-end-0  my-2 ms-5 w-100 bg-transparent" placeholder="Business Arena" aria-label="Last name">
+                </div>
+                <div class="col-4">
+                    <select class="form-select border-top-0 border-start-0 border-end-0  my-2 ms-5 w-100 bg-transparent space1" aria-label="Default select example">
+                        <option selected>Employees</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-6 col-sm-12 sec2 " >
+            <h3 class="text-light my-5 mx-5">Contact Details</h3>
+            <div class="mb-3">
+                
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent" id="formGroupExampleInput" placeholder="Street+ Nr">
+              </div>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent" id="formGroupExampleInput" placeholder="Additional Information">
+              </div>
+            <div class="row my-4 ">
+                <div class="col-4">
+                    <input id="u1" type="text" class="form-control border-top-0 border-start-0 border-end-0   ms-5 bg-transparent" placeholder="Zip Code" aria-label="Last name">
+                    </div>
+                    <div class="col-8">
+                        <select class="form-select border-top-0 border-start-0 border-end-0  ms-5   bg-transparent space1" aria-label="Default select example">
+                            <option selected>Place</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+            </div>
+            <select class="form-select border-top-0 border-start-0 border-end-0 mx-5 my-3 w-75 bg-transparent space1" aria-label="Default select example">
+                <option selected>Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="row  my-4 ">
+                <div class="col-4 ">
+                    <input type="text" class="form-control border-top-0 border-start-0 border-end-0 ms-5  bg-transparent" placeholder="Code +" aria-label="Last name">
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control border-top-0 border-start-0 border-end-0   ms-5 bg-transparent space2" placeholder="Phone Number" aria-label="Last name">
+                </div>
+                </div>
+                <div class="mb-3">
+                
+                    <input type="text" class="form-control border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent" id="formGroupExampleInput" placeholder="Your Email">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check border-top-0 border-start-0 border-end-0  my-4 mx-5 w-75 bg-transparent">
+                      <input class="form-check-input is-invalid " type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                      <label class="form-check-label text-light" for="invalidCheck3">
+                         I do accept the Terms and Conditions of your site.
+                      </label>
+                     
+                    </div>
+                  </div>
+                  <div class="mb-3 ">
+                    <button class="btn btn-light mx-5 mb-5" type="submit" > <b> Register Badge</b></button>
+                  </div>
+                </form>
+              </div>
+            
+        </div>
+    </div>
+ </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
